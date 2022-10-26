@@ -1,0 +1,2189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1476</width>
+    <height>873</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(130,187,62);
+border-radius: 10px;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="leftMargin">
+        <number>3</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>3</number>
+       </property>
+       <property name="bottomMargin">
+        <number>3</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_superior">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>48</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>48</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+background-color: rgb(130,187,62);
+}
+
+QPushButton{
+border-radius:18px;
+background-color: rgb(130,187,62);
+}
+
+QPushButton:hover{
+background-color: rgb(78,118,34);
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="btn_menu">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton:hover{
+background-color: rgb(78,118,34);
+border-radius: 5px
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons2/menu (2).svg</normaloff>icons2/menu (2).svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Laboratorio de Innnovación Intel</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>195</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Jardín Vertical</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>844</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_min">
+            <property name="minimumSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons2/minus (4).svg</normaloff>icons2/minus (4).svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_max">
+            <property name="minimumSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons2/chevrons-up (3).svg</normaloff>icons2/chevrons-up (3).svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_normal">
+            <property name="minimumSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons2/chevrons-down (3).svg</normaloff>icons2/chevrons-down (3).svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_cerrar">
+            <property name="minimumSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton:hover{
+background-color: rgb(230,0,0);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons2/x (4).svg</normaloff>icons2/x (4).svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_contenido">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(44,44,44);
+border-radius: 10px;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="leftMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_menu">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>0</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+background-color: rgb(17,17,17);
+}
+
+QPushButton{
+background-color: rgb(130,187,62);
+border-top-left-radius:20px;
+border-bottom-left-radius:20px;
+border-top-right-radius:5px;
+border-bottom-right-radius:5px;
+color:rgb(0,0,0);
+font: 77 14pt &quot;Arial&quot;;
+}
+
+QPushButton:hover{
+background-color: rgb(78,118,34);
+border-top-left-radius:20px;
+border-bottom-left-radius:20px;
+color:rgb(0,0,0);
+font: 77 14pt &quot;Arial&quot;;
+border-top-right-radius:5px;
+border-bottom-right-radius:5px;
+}
+
+
+QLabel{
+color:rgb(84,111,236);
+font: 77 16pt &quot;Arial&quot;;
+}
+</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="topMargin">
+              <number>16</number>
+             </property>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <spacer name="horizontalSpacer_5">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>13</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_2">
+                   <item>
+                    <widget class="QPushButton" name="btn_inicio">
+                     <property name="minimumSize">
+                      <size>
+                       <width>190</width>
+                       <height>50</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>190</width>
+                       <height>50</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string> Inicio</string>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>icons/estadisticas.svg</normaloff>icons/estadisticas.svg</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>30</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="btn_basedatos">
+                     <property name="minimumSize">
+                      <size>
+                       <width>190</width>
+                       <height>50</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>190</width>
+                       <height>50</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string> Base Datos</string>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>icons2/database (2).svg</normaloff>icons2/database (2).svg</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>30</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_2">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="btn_ajustes">
+                     <property name="minimumSize">
+                      <size>
+                       <width>190</width>
+                       <height>50</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>190</width>
+                       <height>50</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string> Ajustes</string>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <normaloff>icons2/settings (2).svg</normaloff>icons2/settings (2).svg</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>30</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer_3">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_4">
+                   <item>
+                    <spacer name="horizontalSpacer_3">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>18</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>150</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>150</width>
+                       <height>150</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>icons/kindpng_665376.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_2">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>18</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_4">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>13</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_paginas">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(44,44,44);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <property name="leftMargin">
+              <number>1</number>
+             </property>
+             <property name="topMargin">
+              <number>1</number>
+             </property>
+             <property name="rightMargin">
+              <number>1</number>
+             </property>
+             <property name="bottomMargin">
+              <number>1</number>
+             </property>
+             <item>
+              <widget class="QStackedWidget" name="stackedWidget">
+               <widget class="QWidget" name="page_deteccion">
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QFrame" name="frame_2">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_7">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <layout class="QVBoxLayout" name="verticalLayout_6" stretch="4,6">
+                      <item>
+                       <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="5,3">
+                        <item>
+                         <widget class="QFrame" name="frame_3">
+                          <property name="styleSheet">
+                           <string notr="true">QLabel{
+color:rgb(255,255,255);
+font: 77 10pt &quot;Arial&quot;;
+background-color: transparent;
+}</string>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_29">
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_14">
+                             <property name="spacing">
+                              <number>40</number>
+                             </property>
+                             <item>
+                              <widget class="QFrame" name="ind_temp">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(180, 10, 10, 255), stop:1 rgba(180, 10, 10, 255));
+</string>
+                               </property>
+                               <property name="frameShape">
+                                <enum>QFrame::StyledPanel</enum>
+                               </property>
+                               <property name="frameShadow">
+                                <enum>QFrame::Raised</enum>
+                               </property>
+                               <layout class="QVBoxLayout" name="verticalLayout_8">
+                                <item>
+                                 <spacer name="verticalSpacer_4">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>18</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                                <item>
+                                 <layout class="QVBoxLayout" name="verticalLayout_7">
+                                  <item>
+                                   <widget class="QLabel" name="label_4">
+                                    <property name="styleSheet">
+                                     <string notr="true">background-color: transparent;</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Temperatura</string>
+                                    </property>
+                                    <property name="alignment">
+                                     <set>Qt::AlignCenter</set>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_9">
+                                    <item>
+                                     <widget class="QLabel" name="val_temp">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>20</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QLabel" name="label_6">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>°C</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <spacer name="verticalSpacer_5">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>17</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                               </layout>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QFrame" name="ind_humedad">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(0, 30, 255, 180), stop:1 rgba(0, 30, 180, 255));
+</string>
+                               </property>
+                               <property name="frameShape">
+                                <enum>QFrame::StyledPanel</enum>
+                               </property>
+                               <property name="frameShadow">
+                                <enum>QFrame::Raised</enum>
+                               </property>
+                               <layout class="QVBoxLayout" name="verticalLayout_9">
+                                <item>
+                                 <spacer name="verticalSpacer_6">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>18</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                                <item>
+                                 <layout class="QVBoxLayout" name="verticalLayout_10">
+                                  <item>
+                                   <widget class="QLabel" name="label_7">
+                                    <property name="styleSheet">
+                                     <string notr="true">background-color: transparent;</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Humedad</string>
+                                    </property>
+                                    <property name="alignment">
+                                     <set>Qt::AlignCenter</set>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_10">
+                                    <item>
+                                     <widget class="QLabel" name="val_humedad">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>50</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QLabel" name="label_9">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>%</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <spacer name="verticalSpacer_7">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>17</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                               </layout>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QFrame" name="ind_luz">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(150, 150, 0, 255), stop:1 rgba(150, 150, 0, 255));
+</string>
+                               </property>
+                               <property name="frameShape">
+                                <enum>QFrame::StyledPanel</enum>
+                               </property>
+                               <property name="frameShadow">
+                                <enum>QFrame::Raised</enum>
+                               </property>
+                               <layout class="QVBoxLayout" name="verticalLayout_11">
+                                <item>
+                                 <spacer name="verticalSpacer_8">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>18</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                                <item>
+                                 <layout class="QVBoxLayout" name="verticalLayout_12">
+                                  <item>
+                                   <widget class="QLabel" name="label_10">
+                                    <property name="styleSheet">
+                                     <string notr="true">background-color: transparent;</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Luz</string>
+                                    </property>
+                                    <property name="alignment">
+                                     <set>Qt::AlignCenter</set>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_11">
+                                    <item>
+                                     <widget class="QLabel" name="val_luz">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>12</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QLabel" name="label_12">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>Lux</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <spacer name="verticalSpacer_9">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>17</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                               </layout>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QFrame" name="ind_ph">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(160, 0, 180, 255), stop:1 rgba(160, 0, 180, 255));
+</string>
+                               </property>
+                               <property name="frameShape">
+                                <enum>QFrame::StyledPanel</enum>
+                               </property>
+                               <property name="frameShadow">
+                                <enum>QFrame::Raised</enum>
+                               </property>
+                               <layout class="QVBoxLayout" name="verticalLayout_13">
+                                <item>
+                                 <spacer name="verticalSpacer_10">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>18</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                                <item>
+                                 <layout class="QVBoxLayout" name="verticalLayout_14">
+                                  <item>
+                                   <widget class="QLabel" name="label_13">
+                                    <property name="styleSheet">
+                                     <string notr="true">background-color: transparent;</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Ph</string>
+                                    </property>
+                                    <property name="alignment">
+                                     <set>Qt::AlignCenter</set>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_12">
+                                    <item>
+                                     <widget class="QLabel" name="val_ph">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>7</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QLabel" name="label_15">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>Ph</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <spacer name="verticalSpacer_11">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>17</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                               </layout>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QFrame" name="ind_conductividad">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(2, 180, 190, 255), stop:1 rgba(2, 180, 190, 255));
+</string>
+                               </property>
+                               <property name="frameShape">
+                                <enum>QFrame::StyledPanel</enum>
+                               </property>
+                               <property name="frameShadow">
+                                <enum>QFrame::Raised</enum>
+                               </property>
+                               <layout class="QVBoxLayout" name="verticalLayout_15">
+                                <item>
+                                 <spacer name="verticalSpacer_12">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>18</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                                <item>
+                                 <layout class="QVBoxLayout" name="verticalLayout_16">
+                                  <item>
+                                   <widget class="QLabel" name="label_16">
+                                    <property name="styleSheet">
+                                     <string notr="true">background-color: transparent;</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Conductividad</string>
+                                    </property>
+                                    <property name="alignment">
+                                     <set>Qt::AlignCenter</set>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_13">
+                                    <item>
+                                     <widget class="QLabel" name="val_conductividad">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>50</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QLabel" name="label_18">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>ppm</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <spacer name="verticalSpacer_13">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>17</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                               </layout>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_15">
+                             <property name="spacing">
+                              <number>40</number>
+                             </property>
+                             <item>
+                              <widget class="QFrame" name="ind_t_agua">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(190, 0, 60, 255), stop:1 rgba(190, 0, 60, 255));
+</string>
+                               </property>
+                               <property name="frameShape">
+                                <enum>QFrame::StyledPanel</enum>
+                               </property>
+                               <property name="frameShadow">
+                                <enum>QFrame::Raised</enum>
+                               </property>
+                               <layout class="QVBoxLayout" name="verticalLayout_17">
+                                <item>
+                                 <spacer name="verticalSpacer_14">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>18</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                                <item>
+                                 <layout class="QVBoxLayout" name="verticalLayout_18">
+                                  <item>
+                                   <widget class="QLabel" name="label_19">
+                                    <property name="styleSheet">
+                                     <string notr="true">background-color: transparent;</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>T. Agua</string>
+                                    </property>
+                                    <property name="alignment">
+                                     <set>Qt::AlignCenter</set>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_16">
+                                    <item>
+                                     <widget class="QLabel" name="val_t_agua">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>20</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QLabel" name="label_21">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>°C</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <spacer name="verticalSpacer_15">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>17</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                               </layout>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QFrame" name="ind_lvl_agua">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(0, 0, 255, 255), stop:1 rgba(0, 0, 255, 255));
+</string>
+                               </property>
+                               <property name="frameShape">
+                                <enum>QFrame::StyledPanel</enum>
+                               </property>
+                               <property name="frameShadow">
+                                <enum>QFrame::Raised</enum>
+                               </property>
+                               <layout class="QVBoxLayout" name="verticalLayout_19">
+                                <item>
+                                 <spacer name="verticalSpacer_16">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>18</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                                <item>
+                                 <layout class="QVBoxLayout" name="verticalLayout_20">
+                                  <item>
+                                   <widget class="QLabel" name="label_22">
+                                    <property name="styleSheet">
+                                     <string notr="true">background-color: transparent;</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Lvl Agua</string>
+                                    </property>
+                                    <property name="alignment">
+                                     <set>Qt::AlignCenter</set>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_17">
+                                    <item>
+                                     <widget class="QLabel" name="val_lvl_agua">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>50</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QLabel" name="label_24">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>%</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <spacer name="verticalSpacer_17">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>17</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                               </layout>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QFrame" name="ind_lvl_ph_mas">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(17, 190, 0, 255), stop:1 rgba(17, 190, 0, 255));
+</string>
+                               </property>
+                               <property name="frameShape">
+                                <enum>QFrame::StyledPanel</enum>
+                               </property>
+                               <property name="frameShadow">
+                                <enum>QFrame::Raised</enum>
+                               </property>
+                               <layout class="QVBoxLayout" name="verticalLayout_21">
+                                <item>
+                                 <spacer name="verticalSpacer_18">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>18</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                                <item>
+                                 <layout class="QVBoxLayout" name="verticalLayout_22">
+                                  <item>
+                                   <widget class="QLabel" name="label_25">
+                                    <property name="styleSheet">
+                                     <string notr="true">background-color: transparent;</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Lvl Ph+</string>
+                                    </property>
+                                    <property name="alignment">
+                                     <set>Qt::AlignCenter</set>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_18">
+                                    <item>
+                                     <widget class="QLabel" name="val_lvl_ph_mas">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>8</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QLabel" name="label_27">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>Ph</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <spacer name="verticalSpacer_19">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>17</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                               </layout>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QFrame" name="ind_lvl_ph_menos">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(190, 0, 170, 255), stop:1 rgba(190, 0, 170, 255));
+</string>
+                               </property>
+                               <property name="frameShape">
+                                <enum>QFrame::StyledPanel</enum>
+                               </property>
+                               <property name="frameShadow">
+                                <enum>QFrame::Raised</enum>
+                               </property>
+                               <layout class="QVBoxLayout" name="verticalLayout_23">
+                                <item>
+                                 <spacer name="verticalSpacer_20">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>18</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                                <item>
+                                 <layout class="QVBoxLayout" name="verticalLayout_24">
+                                  <item>
+                                   <widget class="QLabel" name="label_28">
+                                    <property name="styleSheet">
+                                     <string notr="true">background-color: transparent;</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Lvl Ph-</string>
+                                    </property>
+                                    <property name="alignment">
+                                     <set>Qt::AlignCenter</set>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_19">
+                                    <item>
+                                     <widget class="QLabel" name="val_lvl_ph_menos">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>7</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QLabel" name="label_30">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>Ph</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <spacer name="verticalSpacer_21">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>17</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                               </layout>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QFrame" name="ind_lvl_nut">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>100</width>
+                                 <height>120</height>
+                                </size>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(255, 0, 0, 255), stop:1 rgba(255, 0, 0, 255));
+</string>
+                               </property>
+                               <property name="frameShape">
+                                <enum>QFrame::StyledPanel</enum>
+                               </property>
+                               <property name="frameShadow">
+                                <enum>QFrame::Raised</enum>
+                               </property>
+                               <layout class="QVBoxLayout" name="verticalLayout_25">
+                                <item>
+                                 <spacer name="verticalSpacer_22">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>18</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                                <item>
+                                 <layout class="QVBoxLayout" name="verticalLayout_26">
+                                  <item>
+                                   <widget class="QLabel" name="label_31">
+                                    <property name="styleSheet">
+                                     <string notr="true">background-color: transparent;</string>
+                                    </property>
+                                    <property name="text">
+                                     <string>Lvl Nut</string>
+                                    </property>
+                                    <property name="alignment">
+                                     <set>Qt::AlignCenter</set>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                  <item>
+                                   <layout class="QHBoxLayout" name="horizontalLayout_20">
+                                    <item>
+                                     <widget class="QLabel" name="val_lvl_nut">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>50</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item>
+                                     <widget class="QLabel" name="label_33">
+                                      <property name="styleSheet">
+                                       <string notr="true">background-color: transparent;</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>%</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </item>
+                                 </layout>
+                                </item>
+                                <item>
+                                 <spacer name="verticalSpacer_23">
+                                  <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                                  </property>
+                                  <property name="sizeHint" stdset="0">
+                                   <size>
+                                    <width>20</width>
+                                    <height>17</height>
+                                   </size>
+                                  </property>
+                                 </spacer>
+                                </item>
+                               </layout>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QFrame" name="frame_4">
+                          <property name="styleSheet">
+                           <string notr="true">QRadioButton{
+color:rgb(218, 0, 55);
+font:87 12pt &quot;Arial&quot;;
+}
+
+QRadioButton::indicator{
+width:30px;
+height: 30px;
+border-radius:20px;
+}
+
+QRadioButton::indicator:checked{
+background-color:#00ff00;
+border:5px solid #111111;
+}
+
+QRadioButton::indicator:unchecked{
+background-color: #da0037;
+border: 5px solid #111111;
+}</string>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_21">
+                           <property name="leftMargin">
+                            <number>20</number>
+                           </property>
+                           <property name="topMargin">
+                            <number>20</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>20</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>20</number>
+                           </property>
+                           <item>
+                            <layout class="QVBoxLayout" name="verticalLayout_27">
+                             <property name="spacing">
+                              <number>20</number>
+                             </property>
+                             <item>
+                              <widget class="QRadioButton" name="act_leds">
+                               <property name="font">
+                                <font>
+                                 <family>Arial</family>
+                                 <pointsize>12</pointsize>
+                                 <weight>10</weight>
+                                 <italic>false</italic>
+                                 <bold>false</bold>
+                                </font>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">QRadioButton{
+color:rgb(255, 255, 255);
+font:87 12pt &quot;Arial&quot;;
+}
+
+QRadioButton::indicator{
+width:30px;
+height: 30px;
+border-radius:20px;
+}
+
+QRadioButton::indicator:checked{
+background-color:#00ff00;
+border:5px solid #111111;
+}
+
+QRadioButton::indicator:unchecked{
+background-color: #da0037;
+border: 5px solid #111111;
+}</string>
+                               </property>
+                               <property name="text">
+                                <string>LEDS</string>
+                               </property>
+                               <property name="checkable">
+                                <bool>false</bool>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QRadioButton" name="act_ph_pump_mas">
+                               <property name="styleSheet">
+                                <string notr="true">QRadioButton{
+color:rgb(255, 255, 255);
+font:87 12pt &quot;Arial&quot;;
+}
+
+QRadioButton::indicator{
+width:30px;
+height: 30px;
+border-radius:20px;
+}
+
+QRadioButton::indicator:checked{
+background-color:#00ff00;
+border:5px solid #111111;
+}
+
+QRadioButton::indicator:unchecked{
+background-color: #da0037;
+border: 5px solid #111111;
+}</string>
+                               </property>
+                               <property name="text">
+                                <string>Ph Pump +</string>
+                               </property>
+                               <property name="checkable">
+                                <bool>false</bool>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QRadioButton" name="act_ph_pump_menos">
+                               <property name="styleSheet">
+                                <string notr="true">QRadioButton{
+color:rgb(255, 255, 255);
+font:87 12pt &quot;Arial&quot;;
+}
+
+QRadioButton::indicator{
+width:30px;
+height: 30px;
+border-radius:20px;
+}
+
+QRadioButton::indicator:checked{
+background-color:#00ff00;
+border:5px solid #111111;
+}
+
+QRadioButton::indicator:unchecked{
+background-color: #da0037;
+border: 5px solid #111111;
+}</string>
+                               </property>
+                               <property name="text">
+                                <string>Ph Pump -</string>
+                               </property>
+                               <property name="checkable">
+                                <bool>false</bool>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QRadioButton" name="act_nut_pump">
+                               <property name="styleSheet">
+                                <string notr="true">QRadioButton{
+color:rgb(255, 255, 255);
+font:87 12pt &quot;Arial&quot;;
+}
+
+QRadioButton::indicator{
+width:30px;
+height: 30px;
+border-radius:20px;
+}
+
+QRadioButton::indicator:checked{
+background-color:#00ff00;
+border:5px solid #111111;
+}
+
+QRadioButton::indicator:unchecked{
+background-color: #da0037;
+border: 5px solid #111111;
+}</string>
+                               </property>
+                               <property name="text">
+                                <string>Nutrient Pump</string>
+                               </property>
+                               <property name="checkable">
+                                <bool>false</bool>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                           <item>
+                            <layout class="QVBoxLayout" name="verticalLayout_28">
+                             <property name="spacing">
+                              <number>20</number>
+                             </property>
+                             <item>
+                              <widget class="QRadioButton" name="act_heater">
+                               <property name="styleSheet">
+                                <string notr="true">QRadioButton{
+color:rgb(255, 255, 255);
+font:87 12pt &quot;Arial&quot;;
+}
+
+QRadioButton::indicator{
+width:30px;
+height: 30px;
+border-radius:20px;
+}
+
+QRadioButton::indicator:checked{
+background-color:#00ff00;
+border:5px solid #111111;
+}
+
+QRadioButton::indicator:unchecked{
+background-color: #da0037;
+border: 5px solid #111111;
+}</string>
+                               </property>
+                               <property name="text">
+                                <string>Heater</string>
+                               </property>
+                               <property name="checkable">
+                                <bool>false</bool>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QRadioButton" name="act_water_pump">
+                               <property name="styleSheet">
+                                <string notr="true">QRadioButton{
+color:rgb(255, 255, 255);
+font:87 12pt &quot;Arial&quot;;
+}
+
+QRadioButton::indicator{
+width:30px;
+height: 30px;
+border-radius:20px;
+}
+
+QRadioButton::indicator:checked{
+background-color:#00ff00;
+border:5px solid #111111;
+}
+
+QRadioButton::indicator:unchecked{
+background-color: #da0037;
+border: 5px solid #111111;
+}</string>
+                               </property>
+                               <property name="text">
+                                <string>Water Pump</string>
+                               </property>
+                               <property name="checkable">
+                                <bool>false</bool>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QRadioButton" name="act_mix_pump">
+                               <property name="styleSheet">
+                                <string notr="true">QRadioButton{
+color:rgb(255, 255, 255);
+font:87 12pt &quot;Arial&quot;;
+}
+
+QRadioButton::indicator{
+width:30px;
+height: 30px;
+border-radius:20px;
+}
+
+QRadioButton::indicator:checked{
+background-color:#00ff00;
+border:5px solid #111111;
+}
+
+QRadioButton::indicator:unchecked{
+background-color: #da0037;
+border: 5px solid #111111;
+}</string>
+                               </property>
+                               <property name="text">
+                                <string>Mix Pump</string>
+                               </property>
+                               <property name="checkable">
+                                <bool>false</bool>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QRadioButton" name="act_main_pump">
+                               <property name="styleSheet">
+                                <string notr="true">QRadioButton{
+color:rgb(255, 255, 255);
+font:87 12pt &quot;Arial&quot;;
+}
+
+QRadioButton::indicator{
+width:30px;
+height: 30px;
+border-radius:20px;
+}
+
+QRadioButton::indicator:checked{
+background-color:#00ff00;
+border:5px solid #111111;
+}
+
+QRadioButton::indicator:unchecked{
+background-color: #da0037;
+border: 5px solid #111111;
+}</string>
+                               </property>
+                               <property name="text">
+                                <string>Main Pump</string>
+                               </property>
+                               <property name="checkable">
+                                <bool>false</bool>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_5">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_23">
+                         <item>
+                          <layout class="QHBoxLayout" name="graph_main"/>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="page_base_datos">
+                <layout class="QVBoxLayout" name="verticalLayout_30">
+                 <item>
+                  <widget class="QTableWidget" name="tableWidget">
+                   <property name="styleSheet">
+                    <string notr="true">QTableWidget{
+background-color:rgb(17,17,17);
+color:rgb(0,0,0);
+gridline-color:rgb(130,187,62);
+}
+
+QHeaderView::section{
+background-color:rgb(130,187,62);
+border: 1px solid rgb(0,0,0);
+font-size:12pt;
+}
+
+QTableWidget QTableCornerButton::section{
+background-color:rgb(0,0,0);
+border: 1px solid rgb(130,187,62);
+}
+</string>
+                   </property>
+                   <column>
+                    <property name="text">
+                     <string>Fecha</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Hora</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Temperatura</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Humedad</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Luz</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Ph</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Conductividad</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>N. Ph+</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>N. Ph</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>N. Ph-</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Lvl. Nut</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Main Pump</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Leds</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Ph+ Pump</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Ph- Pump</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Nut Pump</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Mix Pump</string>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="page_ajustes"/>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
