@@ -139,34 +139,6 @@ border-radius: 5px
            </widget>
           </item>
           <item>
-           <spacer name="horizontalSpacer_6">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>195</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QLabel" name="label_3">
-            <property name="font">
-             <font>
-              <family>Arial</family>
-              <pointsize>16</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="text">
-             <string>Jardín Vertical</string>
-            </property>
-           </widget>
-          </item>
-          <item>
            <spacer name="horizontalSpacer">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
@@ -1738,7 +1710,7 @@ border: 5px solid #111111;
                           <property name="frameShadow">
                            <enum>QFrame::Raised</enum>
                           </property>
-                          <layout class="QHBoxLayout" name="horizontalLayout_21">
+                          <layout class="QHBoxLayout" name="horizontalLayout_30">
                            <property name="leftMargin">
                             <number>20</number>
                            </property>
@@ -1752,281 +1724,440 @@ border: 5px solid #111111;
                             <number>20</number>
                            </property>
                            <item>
-                            <layout class="QVBoxLayout" name="verticalLayout_27">
+                            <layout class="QVBoxLayout" name="verticalLayout_27" stretch="0,0,0,0">
                              <property name="spacing">
-                              <number>20</number>
+                              <number>40</number>
                              </property>
                              <item>
-                              <widget class="QRadioButton" name="act_leds">
-                               <property name="font">
-                                <font>
-                                 <family>Arial</family>
-                                 <pointsize>12</pointsize>
-                                 <weight>10</weight>
-                                 <italic>false</italic>
-                                 <bold>false</bold>
-                                </font>
-                               </property>
-                               <property name="styleSheet">
-                                <string notr="true">QRadioButton{
-color:rgb(255, 255, 255);
-font:87 12pt &quot;Arial&quot;;
-}
-
-QRadioButton::indicator{
-width:30px;
-height: 30px;
-border-radius:20px;
-}
-
-QRadioButton::indicator:checked{
-background-color:#00ff00;
-border:5px solid #111111;
-}
-
-QRadioButton::indicator:unchecked{
-background-color: #da0037;
-border: 5px solid #111111;
+                              <layout class="QHBoxLayout" name="horizontalLayout_21">
+                               <item>
+                                <widget class="QFrame" name="act_main_pump">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>31</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="maximumSize">
+                                  <size>
+                                   <width>31</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">QFrame{
+background-color: rgb(255, 0, 0);
 }</string>
-                               </property>
-                               <property name="text">
-                                <string>LEDS</string>
-                               </property>
-                               <property name="checkable">
-                                <bool>false</bool>
-                               </property>
-                              </widget>
+                                 </property>
+                                 <property name="frameShape">
+                                  <enum>QFrame::StyledPanel</enum>
+                                 </property>
+                                 <property name="frameShadow">
+                                  <enum>QFrame::Raised</enum>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_5">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>120</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="font">
+                                  <font>
+                                   <family>Arial</family>
+                                   <pointsize>11</pointsize>
+                                  </font>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">color: rgb(255, 255, 255);</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Main Pump</string>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
                              </item>
                              <item>
-                              <widget class="QRadioButton" name="act_ph_pump_mas">
-                               <property name="styleSheet">
-                                <string notr="true">QRadioButton{
-color:rgb(255, 255, 255);
-font:87 12pt &quot;Arial&quot;;
-}
-
-QRadioButton::indicator{
-width:30px;
-height: 30px;
-border-radius:20px;
-}
-
-QRadioButton::indicator:checked{
-background-color:#00ff00;
-border:5px solid #111111;
-}
-
-QRadioButton::indicator:unchecked{
-background-color: #da0037;
-border: 5px solid #111111;
+                              <layout class="QHBoxLayout" name="horizontalLayout_22">
+                               <item>
+                                <widget class="QFrame" name="act_leds">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>31</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="maximumSize">
+                                  <size>
+                                   <width>31</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">QFrame{
+background-color: rgb(255, 0, 0);
 }</string>
-                               </property>
-                               <property name="text">
-                                <string>Ph Pump +</string>
-                               </property>
-                               <property name="checkable">
-                                <bool>false</bool>
-                               </property>
-                              </widget>
+                                 </property>
+                                 <property name="frameShape">
+                                  <enum>QFrame::StyledPanel</enum>
+                                 </property>
+                                 <property name="frameShadow">
+                                  <enum>QFrame::Raised</enum>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="label_8">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>120</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="font">
+                                  <font>
+                                   <family>Arial</family>
+                                   <pointsize>11</pointsize>
+                                  </font>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">color: rgb(255, 255, 255);</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>LEDS</string>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
                              </item>
                              <item>
-                              <widget class="QRadioButton" name="act_ph_pump_menos">
-                               <property name="styleSheet">
-                                <string notr="true">QRadioButton{
-color:rgb(255, 255, 255);
-font:87 12pt &quot;Arial&quot;;
-}
-
-QRadioButton::indicator{
-width:30px;
-height: 30px;
-border-radius:20px;
-}
-
-QRadioButton::indicator:checked{
-background-color:#00ff00;
-border:5px solid #111111;
-}
-
-QRadioButton::indicator:unchecked{
-background-color: #da0037;
-border: 5px solid #111111;
+                              <layout class="QHBoxLayout" name="horizontalLayout_24">
+                               <item>
+                                <widget class="QFrame" name="act_ph_mas_pump">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>31</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="maximumSize">
+                                  <size>
+                                   <width>31</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">QFrame{
+background-color: rgb(255, 0, 0);
 }</string>
-                               </property>
-                               <property name="text">
-                                <string>Ph Pump -</string>
-                               </property>
-                               <property name="checkable">
-                                <bool>false</bool>
-                               </property>
-                              </widget>
+                                 </property>
+                                 <property name="frameShape">
+                                  <enum>QFrame::StyledPanel</enum>
+                                 </property>
+                                 <property name="frameShadow">
+                                  <enum>QFrame::Raised</enum>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="txt_pump">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>120</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="font">
+                                  <font>
+                                   <family>Arial</family>
+                                   <pointsize>11</pointsize>
+                                  </font>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">color: rgb(255, 255, 255);</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Ph+ Pump</string>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
                              </item>
                              <item>
-                              <widget class="QRadioButton" name="act_nut_pump">
-                               <property name="styleSheet">
-                                <string notr="true">QRadioButton{
-color:rgb(255, 255, 255);
-font:87 12pt &quot;Arial&quot;;
-}
-
-QRadioButton::indicator{
-width:30px;
-height: 30px;
-border-radius:20px;
-}
-
-QRadioButton::indicator:checked{
-background-color:#00ff00;
-border:5px solid #111111;
-}
-
-QRadioButton::indicator:unchecked{
-background-color: #da0037;
-border: 5px solid #111111;
+                              <layout class="QHBoxLayout" name="horizontalLayout_25">
+                               <item>
+                                <widget class="QFrame" name="act_ph_menos_pump">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>31</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="maximumSize">
+                                  <size>
+                                   <width>31</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">QFrame{
+background-color: rgb(255, 0, 0);
 }</string>
-                               </property>
-                               <property name="text">
-                                <string>Nutrient Pump</string>
-                               </property>
-                               <property name="checkable">
-                                <bool>false</bool>
-                               </property>
-                              </widget>
+                                 </property>
+                                 <property name="frameShape">
+                                  <enum>QFrame::StyledPanel</enum>
+                                 </property>
+                                 <property name="frameShadow">
+                                  <enum>QFrame::Raised</enum>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="txt_pimp2">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>120</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="font">
+                                  <font>
+                                   <family>Arial</family>
+                                   <pointsize>11</pointsize>
+                                  </font>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">color: rgb(255, 255, 255);</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Ph- Pump</string>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
                              </item>
                             </layout>
                            </item>
                            <item>
-                            <layout class="QVBoxLayout" name="verticalLayout_28">
+                            <layout class="QVBoxLayout" name="verticalLayout_28" stretch="0,0,0,0">
                              <property name="spacing">
-                              <number>20</number>
+                              <number>40</number>
                              </property>
                              <item>
-                              <widget class="QRadioButton" name="act_heater">
-                               <property name="styleSheet">
-                                <string notr="true">QRadioButton{
-color:rgb(255, 255, 255);
-font:87 12pt &quot;Arial&quot;;
-}
-
-QRadioButton::indicator{
-width:30px;
-height: 30px;
-border-radius:20px;
-}
-
-QRadioButton::indicator:checked{
-background-color:#00ff00;
-border:5px solid #111111;
-}
-
-QRadioButton::indicator:unchecked{
-background-color: #da0037;
-border: 5px solid #111111;
+                              <layout class="QHBoxLayout" name="horizontalLayout_26">
+                               <item>
+                                <widget class="QFrame" name="act_nut_pump">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>31</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="maximumSize">
+                                  <size>
+                                   <width>31</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">QFrame{
+background-color: rgb(255, 0, 0);
 }</string>
-                               </property>
-                               <property name="text">
-                                <string>Heater</string>
-                               </property>
-                               <property name="checkable">
-                                <bool>false</bool>
-                               </property>
-                              </widget>
+                                 </property>
+                                 <property name="frameShape">
+                                  <enum>QFrame::StyledPanel</enum>
+                                 </property>
+                                 <property name="frameShadow">
+                                  <enum>QFrame::Raised</enum>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="txt_pump3">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>120</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="font">
+                                  <font>
+                                   <family>Arial</family>
+                                   <pointsize>11</pointsize>
+                                  </font>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">color: rgb(255, 255, 255);</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Nut Pump</string>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
                              </item>
                              <item>
-                              <widget class="QRadioButton" name="act_water_pump">
-                               <property name="styleSheet">
-                                <string notr="true">QRadioButton{
-color:rgb(255, 255, 255);
-font:87 12pt &quot;Arial&quot;;
-}
-
-QRadioButton::indicator{
-width:30px;
-height: 30px;
-border-radius:20px;
-}
-
-QRadioButton::indicator:checked{
-background-color:#00ff00;
-border:5px solid #111111;
-}
-
-QRadioButton::indicator:unchecked{
-background-color: #da0037;
-border: 5px solid #111111;
+                              <layout class="QHBoxLayout" name="horizontalLayout_27">
+                               <item>
+                                <widget class="QFrame" name="act_heater">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>31</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="maximumSize">
+                                  <size>
+                                   <width>31</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">QFrame{
+background-color: rgb(255, 0, 0);
 }</string>
-                               </property>
-                               <property name="text">
-                                <string>Water Pump</string>
-                               </property>
-                               <property name="checkable">
-                                <bool>false</bool>
-                               </property>
-                              </widget>
+                                 </property>
+                                 <property name="frameShape">
+                                  <enum>QFrame::StyledPanel</enum>
+                                 </property>
+                                 <property name="frameShadow">
+                                  <enum>QFrame::Raised</enum>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="txt_pump4">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>120</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="font">
+                                  <font>
+                                   <family>Arial</family>
+                                   <pointsize>11</pointsize>
+                                  </font>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">color: rgb(255, 255, 255);</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Heater</string>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
                              </item>
                              <item>
-                              <widget class="QRadioButton" name="act_mix_pump">
-                               <property name="styleSheet">
-                                <string notr="true">QRadioButton{
-color:rgb(255, 255, 255);
-font:87 12pt &quot;Arial&quot;;
-}
-
-QRadioButton::indicator{
-width:30px;
-height: 30px;
-border-radius:20px;
-}
-
-QRadioButton::indicator:checked{
-background-color:#00ff00;
-border:5px solid #111111;
-}
-
-QRadioButton::indicator:unchecked{
-background-color: #da0037;
-border: 5px solid #111111;
+                              <layout class="QHBoxLayout" name="horizontalLayout_28">
+                               <item>
+                                <widget class="QFrame" name="act_water_pump">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>31</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="maximumSize">
+                                  <size>
+                                   <width>31</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">QFrame{
+background-color: rgb(255, 0, 0);
 }</string>
-                               </property>
-                               <property name="text">
-                                <string>Mix Pump</string>
-                               </property>
-                               <property name="checkable">
-                                <bool>false</bool>
-                               </property>
-                              </widget>
+                                 </property>
+                                 <property name="frameShape">
+                                  <enum>QFrame::StyledPanel</enum>
+                                 </property>
+                                 <property name="frameShadow">
+                                  <enum>QFrame::Raised</enum>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="txt_pump6">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>120</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="font">
+                                  <font>
+                                   <family>Arial</family>
+                                   <pointsize>11</pointsize>
+                                  </font>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">color: rgb(255, 255, 255);</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Water Pump</string>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
                              </item>
                              <item>
-                              <widget class="QRadioButton" name="act_main_pump">
-                               <property name="styleSheet">
-                                <string notr="true">QRadioButton{
-color:rgb(255, 255, 255);
-font:87 12pt &quot;Arial&quot;;
-}
-
-QRadioButton::indicator{
-width:30px;
-height: 30px;
-border-radius:20px;
-}
-
-QRadioButton::indicator:checked{
-background-color:#00ff00;
-border:5px solid #111111;
-}
-
-QRadioButton::indicator:unchecked{
-background-color: #da0037;
-border: 5px solid #111111;
+                              <layout class="QHBoxLayout" name="horizontalLayout_29">
+                               <item>
+                                <widget class="QFrame" name="act_mix_pump">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>31</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="maximumSize">
+                                  <size>
+                                   <width>31</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">QFrame{
+background-color: rgb(255, 0, 0);
 }</string>
-                               </property>
-                               <property name="text">
-                                <string>Main Pump</string>
-                               </property>
-                               <property name="checkable">
-                                <bool>false</bool>
-                               </property>
-                              </widget>
+                                 </property>
+                                 <property name="frameShape">
+                                  <enum>QFrame::StyledPanel</enum>
+                                 </property>
+                                 <property name="frameShadow">
+                                  <enum>QFrame::Raised</enum>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QLabel" name="txt_pump7">
+                                 <property name="minimumSize">
+                                  <size>
+                                   <width>120</width>
+                                   <height>31</height>
+                                  </size>
+                                 </property>
+                                 <property name="font">
+                                  <font>
+                                   <family>Arial</family>
+                                   <pointsize>11</pointsize>
+                                  </font>
+                                 </property>
+                                 <property name="styleSheet">
+                                  <string notr="true">color: rgb(255, 255, 255);</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Mix Pump</string>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
                              </item>
                             </layout>
                            </item>

@@ -71,19 +71,8 @@ class Ui_MainWindow(object):
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
         self.horizontalLayout_2.addWidget(self.label_2)
-        spacerItem = QtWidgets.QSpacerItem(195, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem = QtWidgets.QSpacerItem(844, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_2.addItem(spacerItem)
-        self.label_3 = QtWidgets.QLabel(self.frame_superior)
-        font = QtGui.QFont()
-        font.setFamily("Arial")
-        font.setPointSize(16)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_3.setFont(font)
-        self.label_3.setObjectName("label_3")
-        self.horizontalLayout_2.addWidget(self.label_3)
-        spacerItem1 = QtWidgets.QSpacerItem(844, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem1)
         self.btn_min = QtWidgets.QPushButton(self.frame_superior)
         self.btn_min.setMinimumSize(QtCore.QSize(36, 36))
         self.btn_min.setMaximumSize(QtCore.QSize(36, 36))
@@ -178,8 +167,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.setObjectName("verticalLayout_4")
         self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_5.setObjectName("horizontalLayout_5")
-        spacerItem2 = QtWidgets.QSpacerItem(13, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_5.addItem(spacerItem2)
+        spacerItem1 = QtWidgets.QSpacerItem(13, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_5.addItem(spacerItem1)
         self.verticalLayout_3 = QtWidgets.QVBoxLayout()
         self.verticalLayout_3.setObjectName("verticalLayout_3")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout()
@@ -193,8 +182,8 @@ class Ui_MainWindow(object):
         self.btn_inicio.setIconSize(QtCore.QSize(30, 30))
         self.btn_inicio.setObjectName("btn_inicio")
         self.verticalLayout_2.addWidget(self.btn_inicio)
-        spacerItem3 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_2.addItem(spacerItem3)
+        spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_2.addItem(spacerItem2)
         self.btn_basedatos = QtWidgets.QPushButton(self.frame_menu)
         self.btn_basedatos.setMinimumSize(QtCore.QSize(190, 50))
         self.btn_basedatos.setMaximumSize(QtCore.QSize(190, 50))
@@ -204,8 +193,8 @@ class Ui_MainWindow(object):
         self.btn_basedatos.setIconSize(QtCore.QSize(30, 30))
         self.btn_basedatos.setObjectName("btn_basedatos")
         self.verticalLayout_2.addWidget(self.btn_basedatos)
-        spacerItem4 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_2.addItem(spacerItem4)
+        spacerItem3 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_2.addItem(spacerItem3)
         self.btn_ajustes = QtWidgets.QPushButton(self.frame_menu)
         self.btn_ajustes.setMinimumSize(QtCore.QSize(190, 50))
         self.btn_ajustes.setMaximumSize(QtCore.QSize(190, 50))
@@ -216,12 +205,12 @@ class Ui_MainWindow(object):
         self.btn_ajustes.setObjectName("btn_ajustes")
         self.verticalLayout_2.addWidget(self.btn_ajustes)
         self.verticalLayout_3.addLayout(self.verticalLayout_2)
-        spacerItem5 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_3.addItem(spacerItem5)
+        spacerItem4 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_3.addItem(spacerItem4)
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
-        spacerItem6 = QtWidgets.QSpacerItem(18, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_4.addItem(spacerItem6)
+        spacerItem5 = QtWidgets.QSpacerItem(18, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_4.addItem(spacerItem5)
         self.label = QtWidgets.QLabel(self.frame_menu)
         self.label.setMinimumSize(QtCore.QSize(150, 150))
         self.label.setMaximumSize(QtCore.QSize(150, 150))
@@ -230,12 +219,12 @@ class Ui_MainWindow(object):
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.horizontalLayout_4.addWidget(self.label)
-        spacerItem7 = QtWidgets.QSpacerItem(18, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_4.addItem(spacerItem7)
+        spacerItem6 = QtWidgets.QSpacerItem(18, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_4.addItem(spacerItem6)
         self.verticalLayout_3.addLayout(self.horizontalLayout_4)
         self.horizontalLayout_5.addLayout(self.verticalLayout_3)
-        spacerItem8 = QtWidgets.QSpacerItem(13, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_5.addItem(spacerItem8)
+        spacerItem7 = QtWidgets.QSpacerItem(13, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_5.addItem(spacerItem7)
         self.verticalLayout_4.addLayout(self.horizontalLayout_5)
         self.horizontalLayout_3.addWidget(self.frame_menu)
         self.frame_paginas = QtWidgets.QFrame(self.frame_contenido)
@@ -289,8 +278,8 @@ class Ui_MainWindow(object):
         self.ind_temp.setObjectName("ind_temp")
         self.verticalLayout_8 = QtWidgets.QVBoxLayout(self.ind_temp)
         self.verticalLayout_8.setObjectName("verticalLayout_8")
-        spacerItem9 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_8.addItem(spacerItem9)
+        spacerItem8 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_8.addItem(spacerItem8)
         self.verticalLayout_7 = QtWidgets.QVBoxLayout()
         self.verticalLayout_7.setObjectName("verticalLayout_7")
         self.label_4 = QtWidgets.QLabel(self.ind_temp)
@@ -312,8 +301,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_9.addWidget(self.label_6)
         self.verticalLayout_7.addLayout(self.horizontalLayout_9)
         self.verticalLayout_8.addLayout(self.verticalLayout_7)
-        spacerItem10 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_8.addItem(spacerItem10)
+        spacerItem9 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_8.addItem(spacerItem9)
         self.horizontalLayout_14.addWidget(self.ind_temp)
         self.ind_humedad = QtWidgets.QFrame(self.frame_3)
         self.ind_humedad.setMinimumSize(QtCore.QSize(100, 120))
@@ -325,8 +314,8 @@ class Ui_MainWindow(object):
         self.ind_humedad.setObjectName("ind_humedad")
         self.verticalLayout_9 = QtWidgets.QVBoxLayout(self.ind_humedad)
         self.verticalLayout_9.setObjectName("verticalLayout_9")
-        spacerItem11 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_9.addItem(spacerItem11)
+        spacerItem10 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_9.addItem(spacerItem10)
         self.verticalLayout_10 = QtWidgets.QVBoxLayout()
         self.verticalLayout_10.setObjectName("verticalLayout_10")
         self.label_7 = QtWidgets.QLabel(self.ind_humedad)
@@ -348,8 +337,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_10.addWidget(self.label_9)
         self.verticalLayout_10.addLayout(self.horizontalLayout_10)
         self.verticalLayout_9.addLayout(self.verticalLayout_10)
-        spacerItem12 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_9.addItem(spacerItem12)
+        spacerItem11 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_9.addItem(spacerItem11)
         self.horizontalLayout_14.addWidget(self.ind_humedad)
         self.ind_luz = QtWidgets.QFrame(self.frame_3)
         self.ind_luz.setMinimumSize(QtCore.QSize(100, 120))
@@ -361,8 +350,8 @@ class Ui_MainWindow(object):
         self.ind_luz.setObjectName("ind_luz")
         self.verticalLayout_11 = QtWidgets.QVBoxLayout(self.ind_luz)
         self.verticalLayout_11.setObjectName("verticalLayout_11")
-        spacerItem13 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_11.addItem(spacerItem13)
+        spacerItem12 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_11.addItem(spacerItem12)
         self.verticalLayout_12 = QtWidgets.QVBoxLayout()
         self.verticalLayout_12.setObjectName("verticalLayout_12")
         self.label_10 = QtWidgets.QLabel(self.ind_luz)
@@ -384,8 +373,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_11.addWidget(self.label_12)
         self.verticalLayout_12.addLayout(self.horizontalLayout_11)
         self.verticalLayout_11.addLayout(self.verticalLayout_12)
-        spacerItem14 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_11.addItem(spacerItem14)
+        spacerItem13 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_11.addItem(spacerItem13)
         self.horizontalLayout_14.addWidget(self.ind_luz)
         self.ind_ph = QtWidgets.QFrame(self.frame_3)
         self.ind_ph.setMinimumSize(QtCore.QSize(100, 120))
@@ -397,8 +386,8 @@ class Ui_MainWindow(object):
         self.ind_ph.setObjectName("ind_ph")
         self.verticalLayout_13 = QtWidgets.QVBoxLayout(self.ind_ph)
         self.verticalLayout_13.setObjectName("verticalLayout_13")
-        spacerItem15 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_13.addItem(spacerItem15)
+        spacerItem14 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_13.addItem(spacerItem14)
         self.verticalLayout_14 = QtWidgets.QVBoxLayout()
         self.verticalLayout_14.setObjectName("verticalLayout_14")
         self.label_13 = QtWidgets.QLabel(self.ind_ph)
@@ -420,8 +409,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_12.addWidget(self.label_15)
         self.verticalLayout_14.addLayout(self.horizontalLayout_12)
         self.verticalLayout_13.addLayout(self.verticalLayout_14)
-        spacerItem16 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_13.addItem(spacerItem16)
+        spacerItem15 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_13.addItem(spacerItem15)
         self.horizontalLayout_14.addWidget(self.ind_ph)
         self.ind_conductividad = QtWidgets.QFrame(self.frame_3)
         self.ind_conductividad.setMinimumSize(QtCore.QSize(100, 120))
@@ -433,8 +422,8 @@ class Ui_MainWindow(object):
         self.ind_conductividad.setObjectName("ind_conductividad")
         self.verticalLayout_15 = QtWidgets.QVBoxLayout(self.ind_conductividad)
         self.verticalLayout_15.setObjectName("verticalLayout_15")
-        spacerItem17 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_15.addItem(spacerItem17)
+        spacerItem16 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_15.addItem(spacerItem16)
         self.verticalLayout_16 = QtWidgets.QVBoxLayout()
         self.verticalLayout_16.setObjectName("verticalLayout_16")
         self.label_16 = QtWidgets.QLabel(self.ind_conductividad)
@@ -456,8 +445,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_13.addWidget(self.label_18)
         self.verticalLayout_16.addLayout(self.horizontalLayout_13)
         self.verticalLayout_15.addLayout(self.verticalLayout_16)
-        spacerItem18 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_15.addItem(spacerItem18)
+        spacerItem17 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_15.addItem(spacerItem17)
         self.horizontalLayout_14.addWidget(self.ind_conductividad)
         self.verticalLayout_29.addLayout(self.horizontalLayout_14)
         self.horizontalLayout_15 = QtWidgets.QHBoxLayout()
@@ -473,8 +462,8 @@ class Ui_MainWindow(object):
         self.ind_t_agua.setObjectName("ind_t_agua")
         self.verticalLayout_17 = QtWidgets.QVBoxLayout(self.ind_t_agua)
         self.verticalLayout_17.setObjectName("verticalLayout_17")
-        spacerItem19 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_17.addItem(spacerItem19)
+        spacerItem18 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_17.addItem(spacerItem18)
         self.verticalLayout_18 = QtWidgets.QVBoxLayout()
         self.verticalLayout_18.setObjectName("verticalLayout_18")
         self.label_19 = QtWidgets.QLabel(self.ind_t_agua)
@@ -496,8 +485,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_16.addWidget(self.label_21)
         self.verticalLayout_18.addLayout(self.horizontalLayout_16)
         self.verticalLayout_17.addLayout(self.verticalLayout_18)
-        spacerItem20 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_17.addItem(spacerItem20)
+        spacerItem19 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_17.addItem(spacerItem19)
         self.horizontalLayout_15.addWidget(self.ind_t_agua)
         self.ind_lvl_agua = QtWidgets.QFrame(self.frame_3)
         self.ind_lvl_agua.setMinimumSize(QtCore.QSize(100, 120))
@@ -509,8 +498,8 @@ class Ui_MainWindow(object):
         self.ind_lvl_agua.setObjectName("ind_lvl_agua")
         self.verticalLayout_19 = QtWidgets.QVBoxLayout(self.ind_lvl_agua)
         self.verticalLayout_19.setObjectName("verticalLayout_19")
-        spacerItem21 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_19.addItem(spacerItem21)
+        spacerItem20 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_19.addItem(spacerItem20)
         self.verticalLayout_20 = QtWidgets.QVBoxLayout()
         self.verticalLayout_20.setObjectName("verticalLayout_20")
         self.label_22 = QtWidgets.QLabel(self.ind_lvl_agua)
@@ -532,8 +521,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_17.addWidget(self.label_24)
         self.verticalLayout_20.addLayout(self.horizontalLayout_17)
         self.verticalLayout_19.addLayout(self.verticalLayout_20)
-        spacerItem22 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_19.addItem(spacerItem22)
+        spacerItem21 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_19.addItem(spacerItem21)
         self.horizontalLayout_15.addWidget(self.ind_lvl_agua)
         self.ind_lvl_ph_mas = QtWidgets.QFrame(self.frame_3)
         self.ind_lvl_ph_mas.setMinimumSize(QtCore.QSize(100, 120))
@@ -545,8 +534,8 @@ class Ui_MainWindow(object):
         self.ind_lvl_ph_mas.setObjectName("ind_lvl_ph_mas")
         self.verticalLayout_21 = QtWidgets.QVBoxLayout(self.ind_lvl_ph_mas)
         self.verticalLayout_21.setObjectName("verticalLayout_21")
-        spacerItem23 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_21.addItem(spacerItem23)
+        spacerItem22 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_21.addItem(spacerItem22)
         self.verticalLayout_22 = QtWidgets.QVBoxLayout()
         self.verticalLayout_22.setObjectName("verticalLayout_22")
         self.label_25 = QtWidgets.QLabel(self.ind_lvl_ph_mas)
@@ -568,8 +557,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_18.addWidget(self.label_27)
         self.verticalLayout_22.addLayout(self.horizontalLayout_18)
         self.verticalLayout_21.addLayout(self.verticalLayout_22)
-        spacerItem24 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_21.addItem(spacerItem24)
+        spacerItem23 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_21.addItem(spacerItem23)
         self.horizontalLayout_15.addWidget(self.ind_lvl_ph_mas)
         self.ind_lvl_ph_menos = QtWidgets.QFrame(self.frame_3)
         self.ind_lvl_ph_menos.setMinimumSize(QtCore.QSize(100, 120))
@@ -581,8 +570,8 @@ class Ui_MainWindow(object):
         self.ind_lvl_ph_menos.setObjectName("ind_lvl_ph_menos")
         self.verticalLayout_23 = QtWidgets.QVBoxLayout(self.ind_lvl_ph_menos)
         self.verticalLayout_23.setObjectName("verticalLayout_23")
-        spacerItem25 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_23.addItem(spacerItem25)
+        spacerItem24 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_23.addItem(spacerItem24)
         self.verticalLayout_24 = QtWidgets.QVBoxLayout()
         self.verticalLayout_24.setObjectName("verticalLayout_24")
         self.label_28 = QtWidgets.QLabel(self.ind_lvl_ph_menos)
@@ -604,8 +593,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_19.addWidget(self.label_30)
         self.verticalLayout_24.addLayout(self.horizontalLayout_19)
         self.verticalLayout_23.addLayout(self.verticalLayout_24)
-        spacerItem26 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_23.addItem(spacerItem26)
+        spacerItem25 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_23.addItem(spacerItem25)
         self.horizontalLayout_15.addWidget(self.ind_lvl_ph_menos)
         self.ind_lvl_nut = QtWidgets.QFrame(self.frame_3)
         self.ind_lvl_nut.setMinimumSize(QtCore.QSize(100, 120))
@@ -617,8 +606,8 @@ class Ui_MainWindow(object):
         self.ind_lvl_nut.setObjectName("ind_lvl_nut")
         self.verticalLayout_25 = QtWidgets.QVBoxLayout(self.ind_lvl_nut)
         self.verticalLayout_25.setObjectName("verticalLayout_25")
-        spacerItem27 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_25.addItem(spacerItem27)
+        spacerItem26 = QtWidgets.QSpacerItem(20, 18, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_25.addItem(spacerItem26)
         self.verticalLayout_26 = QtWidgets.QVBoxLayout()
         self.verticalLayout_26.setObjectName("verticalLayout_26")
         self.label_31 = QtWidgets.QLabel(self.ind_lvl_nut)
@@ -640,8 +629,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_20.addWidget(self.label_33)
         self.verticalLayout_26.addLayout(self.horizontalLayout_20)
         self.verticalLayout_25.addLayout(self.verticalLayout_26)
-        spacerItem28 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout_25.addItem(spacerItem28)
+        spacerItem27 = QtWidgets.QSpacerItem(20, 17, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_25.addItem(spacerItem27)
         self.horizontalLayout_15.addWidget(self.ind_lvl_nut)
         self.verticalLayout_29.addLayout(self.horizontalLayout_15)
         self.horizontalLayout_6.addWidget(self.frame_3)
@@ -669,216 +658,193 @@ class Ui_MainWindow(object):
         self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_4.setObjectName("frame_4")
-        self.horizontalLayout_21 = QtWidgets.QHBoxLayout(self.frame_4)
-        self.horizontalLayout_21.setContentsMargins(20, 20, 20, 20)
-        self.horizontalLayout_21.setObjectName("horizontalLayout_21")
+        self.horizontalLayout_30 = QtWidgets.QHBoxLayout(self.frame_4)
+        self.horizontalLayout_30.setContentsMargins(20, 20, 20, 20)
+        self.horizontalLayout_30.setObjectName("horizontalLayout_30")
         self.verticalLayout_27 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_27.setSpacing(20)
+        self.verticalLayout_27.setSpacing(40)
         self.verticalLayout_27.setObjectName("verticalLayout_27")
-        self.act_leds = QtWidgets.QRadioButton(self.frame_4)
+        self.horizontalLayout_21 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_21.setObjectName("horizontalLayout_21")
+        self.act_main_pump = QtWidgets.QFrame(self.frame_4)
+        self.act_main_pump.setMinimumSize(QtCore.QSize(31, 31))
+        self.act_main_pump.setMaximumSize(QtCore.QSize(31, 31))
+        self.act_main_pump.setStyleSheet("QFrame{\n"
+"background-color: rgb(255, 0, 0);\n"
+"}")
+        self.act_main_pump.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.act_main_pump.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.act_main_pump.setObjectName("act_main_pump")
+        self.horizontalLayout_21.addWidget(self.act_main_pump)
+        self.label_5 = QtWidgets.QLabel(self.frame_4)
+        self.label_5.setMinimumSize(QtCore.QSize(120, 31))
         font = QtGui.QFont()
         font.setFamily("Arial")
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(10)
-        self.act_leds.setFont(font)
-        self.act_leds.setStyleSheet("QRadioButton{\n"
-"color:rgb(255, 255, 255);\n"
-"font:87 12pt \"Arial\";\n"
-"}\n"
-"\n"
-"QRadioButton::indicator{\n"
-"width:30px;\n"
-"height: 30px;\n"
-"border-radius:20px;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:checked{\n"
-"background-color:#00ff00;\n"
-"border:5px solid #111111;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:unchecked{\n"
-"background-color: #da0037;\n"
-"border: 5px solid #111111;\n"
+        font.setPointSize(11)
+        self.label_5.setFont(font)
+        self.label_5.setStyleSheet("color: rgb(255, 255, 255);")
+        self.label_5.setObjectName("label_5")
+        self.horizontalLayout_21.addWidget(self.label_5)
+        self.verticalLayout_27.addLayout(self.horizontalLayout_21)
+        self.horizontalLayout_22 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_22.setObjectName("horizontalLayout_22")
+        self.act_leds = QtWidgets.QFrame(self.frame_4)
+        self.act_leds.setMinimumSize(QtCore.QSize(31, 31))
+        self.act_leds.setMaximumSize(QtCore.QSize(31, 31))
+        self.act_leds.setStyleSheet("QFrame{\n"
+"background-color: rgb(255, 0, 0);\n"
 "}")
-        self.act_leds.setCheckable(False)
+        self.act_leds.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.act_leds.setFrameShadow(QtWidgets.QFrame.Raised)
         self.act_leds.setObjectName("act_leds")
-        self.verticalLayout_27.addWidget(self.act_leds)
-        self.act_ph_pump_mas = QtWidgets.QRadioButton(self.frame_4)
-        self.act_ph_pump_mas.setStyleSheet("QRadioButton{\n"
-"color:rgb(255, 255, 255);\n"
-"font:87 12pt \"Arial\";\n"
-"}\n"
-"\n"
-"QRadioButton::indicator{\n"
-"width:30px;\n"
-"height: 30px;\n"
-"border-radius:20px;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:checked{\n"
-"background-color:#00ff00;\n"
-"border:5px solid #111111;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:unchecked{\n"
-"background-color: #da0037;\n"
-"border: 5px solid #111111;\n"
+        self.horizontalLayout_22.addWidget(self.act_leds)
+        self.label_8 = QtWidgets.QLabel(self.frame_4)
+        self.label_8.setMinimumSize(QtCore.QSize(120, 31))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(11)
+        self.label_8.setFont(font)
+        self.label_8.setStyleSheet("color: rgb(255, 255, 255);")
+        self.label_8.setObjectName("label_8")
+        self.horizontalLayout_22.addWidget(self.label_8)
+        self.verticalLayout_27.addLayout(self.horizontalLayout_22)
+        self.horizontalLayout_24 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_24.setObjectName("horizontalLayout_24")
+        self.act_ph_mas_pump = QtWidgets.QFrame(self.frame_4)
+        self.act_ph_mas_pump.setMinimumSize(QtCore.QSize(31, 31))
+        self.act_ph_mas_pump.setMaximumSize(QtCore.QSize(31, 31))
+        self.act_ph_mas_pump.setStyleSheet("QFrame{\n"
+"background-color: rgb(255, 0, 0);\n"
 "}")
-        self.act_ph_pump_mas.setCheckable(False)
-        self.act_ph_pump_mas.setObjectName("act_ph_pump_mas")
-        self.verticalLayout_27.addWidget(self.act_ph_pump_mas)
-        self.act_ph_pump_menos = QtWidgets.QRadioButton(self.frame_4)
-        self.act_ph_pump_menos.setStyleSheet("QRadioButton{\n"
-"color:rgb(255, 255, 255);\n"
-"font:87 12pt \"Arial\";\n"
-"}\n"
-"\n"
-"QRadioButton::indicator{\n"
-"width:30px;\n"
-"height: 30px;\n"
-"border-radius:20px;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:checked{\n"
-"background-color:#00ff00;\n"
-"border:5px solid #111111;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:unchecked{\n"
-"background-color: #da0037;\n"
-"border: 5px solid #111111;\n"
+        self.act_ph_mas_pump.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.act_ph_mas_pump.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.act_ph_mas_pump.setObjectName("act_ph_mas_pump")
+        self.horizontalLayout_24.addWidget(self.act_ph_mas_pump)
+        self.txt_pump = QtWidgets.QLabel(self.frame_4)
+        self.txt_pump.setMinimumSize(QtCore.QSize(120, 31))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(11)
+        self.txt_pump.setFont(font)
+        self.txt_pump.setStyleSheet("color: rgb(255, 255, 255);")
+        self.txt_pump.setObjectName("txt_pump")
+        self.horizontalLayout_24.addWidget(self.txt_pump)
+        self.verticalLayout_27.addLayout(self.horizontalLayout_24)
+        self.horizontalLayout_25 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_25.setObjectName("horizontalLayout_25")
+        self.act_ph_menos_pump = QtWidgets.QFrame(self.frame_4)
+        self.act_ph_menos_pump.setMinimumSize(QtCore.QSize(31, 31))
+        self.act_ph_menos_pump.setMaximumSize(QtCore.QSize(31, 31))
+        self.act_ph_menos_pump.setStyleSheet("QFrame{\n"
+"background-color: rgb(255, 0, 0);\n"
 "}")
-        self.act_ph_pump_menos.setCheckable(False)
-        self.act_ph_pump_menos.setObjectName("act_ph_pump_menos")
-        self.verticalLayout_27.addWidget(self.act_ph_pump_menos)
-        self.act_nut_pump = QtWidgets.QRadioButton(self.frame_4)
-        self.act_nut_pump.setStyleSheet("QRadioButton{\n"
-"color:rgb(255, 255, 255);\n"
-"font:87 12pt \"Arial\";\n"
-"}\n"
-"\n"
-"QRadioButton::indicator{\n"
-"width:30px;\n"
-"height: 30px;\n"
-"border-radius:20px;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:checked{\n"
-"background-color:#00ff00;\n"
-"border:5px solid #111111;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:unchecked{\n"
-"background-color: #da0037;\n"
-"border: 5px solid #111111;\n"
-"}")
-        self.act_nut_pump.setCheckable(False)
-        self.act_nut_pump.setObjectName("act_nut_pump")
-        self.verticalLayout_27.addWidget(self.act_nut_pump)
-        self.horizontalLayout_21.addLayout(self.verticalLayout_27)
+        self.act_ph_menos_pump.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.act_ph_menos_pump.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.act_ph_menos_pump.setObjectName("act_ph_menos_pump")
+        self.horizontalLayout_25.addWidget(self.act_ph_menos_pump)
+        self.txt_pimp2 = QtWidgets.QLabel(self.frame_4)
+        self.txt_pimp2.setMinimumSize(QtCore.QSize(120, 31))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(11)
+        self.txt_pimp2.setFont(font)
+        self.txt_pimp2.setStyleSheet("color: rgb(255, 255, 255);")
+        self.txt_pimp2.setObjectName("txt_pimp2")
+        self.horizontalLayout_25.addWidget(self.txt_pimp2)
+        self.verticalLayout_27.addLayout(self.horizontalLayout_25)
+        self.horizontalLayout_30.addLayout(self.verticalLayout_27)
         self.verticalLayout_28 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_28.setSpacing(20)
+        self.verticalLayout_28.setSpacing(40)
         self.verticalLayout_28.setObjectName("verticalLayout_28")
-        self.act_heater = QtWidgets.QRadioButton(self.frame_4)
-        self.act_heater.setStyleSheet("QRadioButton{\n"
-"color:rgb(255, 255, 255);\n"
-"font:87 12pt \"Arial\";\n"
-"}\n"
-"\n"
-"QRadioButton::indicator{\n"
-"width:30px;\n"
-"height: 30px;\n"
-"border-radius:20px;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:checked{\n"
-"background-color:#00ff00;\n"
-"border:5px solid #111111;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:unchecked{\n"
-"background-color: #da0037;\n"
-"border: 5px solid #111111;\n"
+        self.horizontalLayout_26 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_26.setObjectName("horizontalLayout_26")
+        self.act_nut_pump = QtWidgets.QFrame(self.frame_4)
+        self.act_nut_pump.setMinimumSize(QtCore.QSize(31, 31))
+        self.act_nut_pump.setMaximumSize(QtCore.QSize(31, 31))
+        self.act_nut_pump.setStyleSheet("QFrame{\n"
+"background-color: rgb(255, 0, 0);\n"
 "}")
-        self.act_heater.setCheckable(False)
+        self.act_nut_pump.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.act_nut_pump.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.act_nut_pump.setObjectName("act_nut_pump")
+        self.horizontalLayout_26.addWidget(self.act_nut_pump)
+        self.txt_pump3 = QtWidgets.QLabel(self.frame_4)
+        self.txt_pump3.setMinimumSize(QtCore.QSize(120, 31))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(11)
+        self.txt_pump3.setFont(font)
+        self.txt_pump3.setStyleSheet("color: rgb(255, 255, 255);")
+        self.txt_pump3.setObjectName("txt_pump3")
+        self.horizontalLayout_26.addWidget(self.txt_pump3)
+        self.verticalLayout_28.addLayout(self.horizontalLayout_26)
+        self.horizontalLayout_27 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_27.setObjectName("horizontalLayout_27")
+        self.act_heater = QtWidgets.QFrame(self.frame_4)
+        self.act_heater.setMinimumSize(QtCore.QSize(31, 31))
+        self.act_heater.setMaximumSize(QtCore.QSize(31, 31))
+        self.act_heater.setStyleSheet("QFrame{\n"
+"background-color: rgb(255, 0, 0);\n"
+"}")
+        self.act_heater.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.act_heater.setFrameShadow(QtWidgets.QFrame.Raised)
         self.act_heater.setObjectName("act_heater")
-        self.verticalLayout_28.addWidget(self.act_heater)
-        self.act_water_pump = QtWidgets.QRadioButton(self.frame_4)
-        self.act_water_pump.setStyleSheet("QRadioButton{\n"
-"color:rgb(255, 255, 255);\n"
-"font:87 12pt \"Arial\";\n"
-"}\n"
-"\n"
-"QRadioButton::indicator{\n"
-"width:30px;\n"
-"height: 30px;\n"
-"border-radius:20px;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:checked{\n"
-"background-color:#00ff00;\n"
-"border:5px solid #111111;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:unchecked{\n"
-"background-color: #da0037;\n"
-"border: 5px solid #111111;\n"
+        self.horizontalLayout_27.addWidget(self.act_heater)
+        self.txt_pump4 = QtWidgets.QLabel(self.frame_4)
+        self.txt_pump4.setMinimumSize(QtCore.QSize(120, 31))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(11)
+        self.txt_pump4.setFont(font)
+        self.txt_pump4.setStyleSheet("color: rgb(255, 255, 255);")
+        self.txt_pump4.setObjectName("txt_pump4")
+        self.horizontalLayout_27.addWidget(self.txt_pump4)
+        self.verticalLayout_28.addLayout(self.horizontalLayout_27)
+        self.horizontalLayout_28 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_28.setObjectName("horizontalLayout_28")
+        self.act_water_pump = QtWidgets.QFrame(self.frame_4)
+        self.act_water_pump.setMinimumSize(QtCore.QSize(31, 31))
+        self.act_water_pump.setMaximumSize(QtCore.QSize(31, 31))
+        self.act_water_pump.setStyleSheet("QFrame{\n"
+"background-color: rgb(255, 0, 0);\n"
 "}")
-        self.act_water_pump.setCheckable(False)
+        self.act_water_pump.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.act_water_pump.setFrameShadow(QtWidgets.QFrame.Raised)
         self.act_water_pump.setObjectName("act_water_pump")
-        self.verticalLayout_28.addWidget(self.act_water_pump)
-        self.act_mix_pump = QtWidgets.QRadioButton(self.frame_4)
-        self.act_mix_pump.setStyleSheet("QRadioButton{\n"
-"color:rgb(255, 255, 255);\n"
-"font:87 12pt \"Arial\";\n"
-"}\n"
-"\n"
-"QRadioButton::indicator{\n"
-"width:30px;\n"
-"height: 30px;\n"
-"border-radius:20px;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:checked{\n"
-"background-color:#00ff00;\n"
-"border:5px solid #111111;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:unchecked{\n"
-"background-color: #da0037;\n"
-"border: 5px solid #111111;\n"
+        self.horizontalLayout_28.addWidget(self.act_water_pump)
+        self.txt_pump6 = QtWidgets.QLabel(self.frame_4)
+        self.txt_pump6.setMinimumSize(QtCore.QSize(120, 31))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(11)
+        self.txt_pump6.setFont(font)
+        self.txt_pump6.setStyleSheet("color: rgb(255, 255, 255);")
+        self.txt_pump6.setObjectName("txt_pump6")
+        self.horizontalLayout_28.addWidget(self.txt_pump6)
+        self.verticalLayout_28.addLayout(self.horizontalLayout_28)
+        self.horizontalLayout_29 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_29.setObjectName("horizontalLayout_29")
+        self.act_mix_pump = QtWidgets.QFrame(self.frame_4)
+        self.act_mix_pump.setMinimumSize(QtCore.QSize(31, 31))
+        self.act_mix_pump.setMaximumSize(QtCore.QSize(31, 31))
+        self.act_mix_pump.setStyleSheet("QFrame{\n"
+"background-color: rgb(255, 0, 0);\n"
 "}")
-        self.act_mix_pump.setCheckable(False)
+        self.act_mix_pump.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.act_mix_pump.setFrameShadow(QtWidgets.QFrame.Raised)
         self.act_mix_pump.setObjectName("act_mix_pump")
-        self.verticalLayout_28.addWidget(self.act_mix_pump)
-        self.act_main_pump = QtWidgets.QRadioButton(self.frame_4)
-        self.act_main_pump.setStyleSheet("QRadioButton{\n"
-"color:rgb(255, 255, 255);\n"
-"font:87 12pt \"Arial\";\n"
-"}\n"
-"\n"
-"QRadioButton::indicator{\n"
-"width:30px;\n"
-"height: 30px;\n"
-"border-radius:20px;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:checked{\n"
-"background-color:#00ff00;\n"
-"border:5px solid #111111;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:unchecked{\n"
-"background-color: #da0037;\n"
-"border: 5px solid #111111;\n"
-"}")
-        self.act_main_pump.setCheckable(False)
-        self.act_main_pump.setObjectName("act_main_pump")
-        self.verticalLayout_28.addWidget(self.act_main_pump)
-        self.horizontalLayout_21.addLayout(self.verticalLayout_28)
+        self.horizontalLayout_29.addWidget(self.act_mix_pump)
+        self.txt_pump7 = QtWidgets.QLabel(self.frame_4)
+        self.txt_pump7.setMinimumSize(QtCore.QSize(120, 31))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(11)
+        self.txt_pump7.setFont(font)
+        self.txt_pump7.setStyleSheet("color: rgb(255, 255, 255);")
+        self.txt_pump7.setObjectName("txt_pump7")
+        self.horizontalLayout_29.addWidget(self.txt_pump7)
+        self.verticalLayout_28.addLayout(self.horizontalLayout_29)
+        self.horizontalLayout_30.addLayout(self.verticalLayout_28)
         self.horizontalLayout_6.addWidget(self.frame_4)
         self.horizontalLayout_6.setStretch(0, 5)
         self.horizontalLayout_6.setStretch(1, 3)
@@ -975,7 +941,6 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label_2.setText(_translate("MainWindow", "Laboratorio de Innnovación Intel"))
-        self.label_3.setText(_translate("MainWindow", "Jardín Vertical"))
         self.btn_inicio.setText(_translate("MainWindow", " Inicio"))
         self.btn_basedatos.setText(_translate("MainWindow", " Base Datos"))
         self.btn_ajustes.setText(_translate("MainWindow", " Ajustes"))
@@ -1009,14 +974,14 @@ class Ui_MainWindow(object):
         self.label_31.setText(_translate("MainWindow", "Lvl Nut"))
         self.val_lvl_nut.setText(_translate("MainWindow", "50"))
         self.label_33.setText(_translate("MainWindow", "%"))
-        self.act_leds.setText(_translate("MainWindow", "LEDS"))
-        self.act_ph_pump_mas.setText(_translate("MainWindow", "Ph Pump +"))
-        self.act_ph_pump_menos.setText(_translate("MainWindow", "Ph Pump -"))
-        self.act_nut_pump.setText(_translate("MainWindow", "Nutrient Pump"))
-        self.act_heater.setText(_translate("MainWindow", "Heater"))
-        self.act_water_pump.setText(_translate("MainWindow", "Water Pump"))
-        self.act_mix_pump.setText(_translate("MainWindow", "Mix Pump"))
-        self.act_main_pump.setText(_translate("MainWindow", "Main Pump"))
+        self.label_5.setText(_translate("MainWindow", "Main Pump"))
+        self.label_8.setText(_translate("MainWindow", "LEDS"))
+        self.txt_pump.setText(_translate("MainWindow", "Ph+ Pump"))
+        self.txt_pimp2.setText(_translate("MainWindow", "Ph- Pump"))
+        self.txt_pump3.setText(_translate("MainWindow", "Nut Pump"))
+        self.txt_pump4.setText(_translate("MainWindow", "Heater"))
+        self.txt_pump6.setText(_translate("MainWindow", "Water Pump"))
+        self.txt_pump7.setText(_translate("MainWindow", "Mix Pump"))
         item = self.tableWidget.horizontalHeaderItem(0)
         item.setText(_translate("MainWindow", "Fecha"))
         item = self.tableWidget.horizontalHeaderItem(1)

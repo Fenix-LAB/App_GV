@@ -45,6 +45,14 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
 
         self.show_indicator()
         #self.act_leds.setChecked(1)
+        self.main_pump(1)
+        self.mix_pump(0)
+        self.water_pump(1)
+        self.Leds(0)
+        self.ph_pump_mas(1)
+        self.ph_pump_menos(1)
+        self.nut_pump(0)
+        self.heater(0)
 
     def mover_menu(self):
         if True:
@@ -105,19 +113,20 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         # self.plt.plot(self.x, self.y, pen=pg.mkPen('#da0037', width=2))
 
     def show_indicator(self):
-        self.indicator_temp(0.5)
-        self.indicator_humedad(0.7)
-        self.indicator_luz(0.1)
-        self.indicator_ph(0.6)
-        self.indicator_conductividad(0.98)
-        self.indicator_lvl_agua(0.75)
-        self.indicator_t_agua(0.3)
-        self.indicator_lvl_ph_mas(0.26)
-        self.indicator_lvl_ph_menos(0.88)
-        self.indicator_lvl_nut(0.5)
+        # indicator(cantidad de color {0 - 1}, valor númerico {numero real})
+        self.indicator_temp(0.5, 21)
+        self.indicator_humedad(0.1, 80)
+        self.indicator_luz(0.1, 90)
+        self.indicator_ph(0.6, 5)
+        self.indicator_conductividad(0.98, 1)
+        self.indicator_lvl_agua(0.75, 20)
+        self.indicator_t_agua(0.3, 30)
+        self.indicator_lvl_ph_mas(0.26, 2)
+        self.indicator_lvl_ph_menos(0.88, 13)
+        self.indicator_lvl_nut(0.5, 50)
         #QTimer.SigleShot(20, self.show_indicator())
 
-    def indicator_temp(self, val):
+    def indicator_temp(self, val, num):
         # Indicador de temperatura
         estilo_temp =  """QFrame{
         background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), 
@@ -126,6 +135,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         }"""
         # Indicadores de 0 a 1
         # Stop1 es el valor al que se coloca el indicador
+        self.val_temp.setText(str(num))
         stop1 = val
         stop2 = stop1+0.01
         Sstop1 = str(stop1)
@@ -133,13 +143,14 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         nuevo_estilo = estilo_temp.replace('{stop1}', Sstop1).replace('{stop2}', Sstop2)
         self.ind_temp.setStyleSheet(nuevo_estilo)
 
-    def indicator_humedad(self, val):
+    def indicator_humedad(self, val, num):
         # Indicador de humedad
         estilo_temp =  """QFrame{
         background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(0, 30, 255, 180), stop:1 rgba(0, 30, 180, 255));
         }"""
         # Indicadores de 0 a 1
         # Stop1 es el valor al que se coloca el indicador
+        self.val_humedad.setText(str(num))
         stop1 = val
         stop2 = stop1+0.01
         Sstop1 = str(stop1)
@@ -147,13 +158,14 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         nuevo_estilo = estilo_temp.replace('{stop1}', Sstop1).replace('{stop2}', Sstop2)
         self.ind_humedad.setStyleSheet(nuevo_estilo)
 
-    def indicator_luz(self, val):
+    def indicator_luz(self, val, num):
         # Indicador de humedad
         estilo_temp =  """QFrame{
         background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(150, 150, 0, 255), stop:1 rgba(150, 150, 0, 255));
         }"""
         # Indicadores de 0 a 1
         # Stop1 es el valor al que se coloca el indicador
+        self.val_luz.setText(str(num))
         stop1 = val
         stop2 = stop1+0.01
         Sstop1 = str(stop1)
@@ -161,13 +173,14 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         nuevo_estilo = estilo_temp.replace('{stop1}', Sstop1).replace('{stop2}', Sstop2)
         self.ind_luz.setStyleSheet(nuevo_estilo)
 
-    def indicator_ph(self, val):
+    def indicator_ph(self, val, num):
         # Indicador de temperatura
         estilo_temp =  """QFrame{
         background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(160, 0, 180, 255), stop:1 rgba(160, 0, 180, 255));
         }"""
         # Indicadores de 0 a 1
         # Stop1 es el valor al que se coloca el indicador
+        self.val_ph.setText(str(num))
         stop1 = val
         stop2 = stop1+0.01
         Sstop1 = str(stop1)
@@ -175,13 +188,14 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         nuevo_estilo = estilo_temp.replace('{stop1}', Sstop1).replace('{stop2}', Sstop2)
         self.ind_ph.setStyleSheet(nuevo_estilo)
 
-    def indicator_conductividad(self, val):
+    def indicator_conductividad(self, val, num):
         # Indicador de temperatura
         estilo_temp =  """QFrame{
         background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(2, 180, 190, 255), stop:1 rgba(2, 180, 190, 255));
         }"""
         # Indicadores de 0 a 1
         # Stop1 es el valor al que se coloca el indicador
+        self.val_conductividad.setText(str(num))
         stop1 = val
         stop2 = stop1+0.01
         Sstop1 = str(stop1)
@@ -189,13 +203,14 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         nuevo_estilo = estilo_temp.replace('{stop1}', Sstop1).replace('{stop2}', Sstop2)
         self.ind_conductividad.setStyleSheet(nuevo_estilo)
 
-    def indicator_t_agua(self, val):
+    def indicator_t_agua(self, val, num):
         # Indicador de temperatura
         estilo_temp =  """QFrame{
         background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(190, 0, 60, 255), stop:1 rgba(190, 0, 60, 255));
         }"""
         # Indicadores de 0 a 1
         # Stop1 es el valor al que se coloca el indicador
+        self.val_t_agua.setText(str(num))
         stop1 = val
         stop2 = stop1+0.01
         Sstop1 = str(stop1)
@@ -203,13 +218,14 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         nuevo_estilo = estilo_temp.replace('{stop1}', Sstop1).replace('{stop2}', Sstop2)
         self.ind_t_agua.setStyleSheet(nuevo_estilo)
 
-    def indicator_lvl_agua(self, val):
+    def indicator_lvl_agua(self, val, num):
         # Indicador de temperatura
         estilo_temp =  """QFrame{
         background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(0, 0, 255, 255), stop:1 rgba(0, 0, 255, 255));
         }"""
         # Indicadores de 0 a 1
         # Stop1 es el valor al que se coloca el indicador
+        self.val_lvl_agua.setText(str(num))
         stop1 = val
         stop2 = stop1+0.01
         Sstop1 = str(stop1)
@@ -217,13 +233,14 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         nuevo_estilo = estilo_temp.replace('{stop1}', Sstop1).replace('{stop2}', Sstop2)
         self.ind_lvl_agua.setStyleSheet(nuevo_estilo)
 
-    def indicator_lvl_ph_mas(self, val):
+    def indicator_lvl_ph_mas(self, val, num):
         # Indicador de temperatura
         estilo_temp =  """QFrame{
         background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(17, 190, 0, 255), stop:1 rgba(17, 190, 0, 255));
         }"""
         # Indicadores de 0 a 1
         # Stop1 es el valor al que se coloca el indicador
+        self.val_lvl_ph_mas.setText(str(num))
         stop1 = val
         stop2 = stop1+0.01
         Sstop1 = str(stop1)
@@ -231,13 +248,14 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         nuevo_estilo = estilo_temp.replace('{stop1}', Sstop1).replace('{stop2}', Sstop2)
         self.ind_lvl_ph_mas.setStyleSheet(nuevo_estilo)
 
-    def indicator_lvl_ph_menos(self, val):
+    def indicator_lvl_ph_menos(self, val, num):
         # Indicador de temperatura
         estilo_temp =  """QFrame{
         background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(190, 0, 170, 255), stop:1 rgba(190, 0, 170, 255));
         }"""
         # Indicadores de 0 a 1
         # Stop1 es el valor al que se coloca el indicador
+        self.val_lvl_ph_menos.setText(str(num))
         stop1 = val
         stop2 = stop1+0.01
         Sstop1 = str(stop1)
@@ -245,13 +263,14 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         nuevo_estilo = estilo_temp.replace('{stop1}', Sstop1).replace('{stop2}', Sstop2)
         self.ind_lvl_ph_menos.setStyleSheet(nuevo_estilo)
 
-    def indicator_lvl_nut(self, val):
+    def indicator_lvl_nut(self, val, num):
         # Indicador de temperatura
         estilo_temp =  """QFrame{
         background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(17, 17, 17, 255), stop:{stop1} rgba(17, 17, 17, 255), stop:{stop2} rgba(255, 0, 0, 255), stop:1 rgba(255, 0, 0, 255));
         }"""
         # Indicadores de 0 a 1
         # Stop1 es el valor al que se coloca el indicador
+        self.val_lvl_nut.setText(str(num))
         stop1 = val
         stop2 = stop1+0.01
         Sstop1 = str(stop1)
@@ -259,6 +278,109 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
         nuevo_estilo = estilo_temp.replace('{stop1}', Sstop1).replace('{stop2}', Sstop2)
         self.ind_lvl_nut.setStyleSheet(nuevo_estilo)
 
+    def main_pump(self, val):
+        estilo_temp = """QFrame{
+        background-color:{color};
+        }"""
+        rojo = "rgb(255, 0, 0);"
+        verde = "rgb(0, 255, 0);"
+        if val == True:
+            nuevo_estilo = estilo_temp.replace('{color}', verde)
+            self.act_main_pump.setStyleSheet(nuevo_estilo)
+        else:
+            nuevo_estilo = estilo_temp.replace('{color}', rojo)
+            self.act_main_pump.setStyleSheet(nuevo_estilo)
+
+    def Leds(self, val):
+        estilo_temp = """QFrame{
+        background-color:{color};
+        }"""
+        rojo = "rgb(255, 0, 0);"
+        verde = "rgb(0, 255, 0);"
+        if val == True:
+            nuevo_estilo = estilo_temp.replace('{color}', verde)
+            self.act_leds.setStyleSheet(nuevo_estilo)
+        else:
+            nuevo_estilo = estilo_temp.replace('{color}', rojo)
+            self.act_leds.setStyleSheet(nuevo_estilo)
+
+    def ph_pump_mas(self, val):
+        estilo_temp = """QFrame{
+        background-color:{color};
+        }"""
+        rojo = "rgb(255, 0, 0);"
+        verde = "rgb(0, 255, 0);"
+        if val == True:
+            nuevo_estilo = estilo_temp.replace('{color}', verde)
+            self.act_ph_mas_pump.setStyleSheet(nuevo_estilo)
+        else:
+            nuevo_estilo = estilo_temp.replace('{color}', rojo)
+            self.act_ph_mas_pump.setStyleSheet(nuevo_estilo)
+
+    def ph_pump_menos(self, val):
+        estilo_temp = """QFrame{
+        background-color:{color};
+        }"""
+        rojo = "rgb(255, 0, 0);"
+        verde = "rgb(0, 255, 0);"
+        if val == True:
+            nuevo_estilo = estilo_temp.replace('{color}', verde)
+            self.act_ph_menos_pump.setStyleSheet(nuevo_estilo)
+        else:
+            nuevo_estilo = estilo_temp.replace('{color}', rojo)
+            self.act_ph_menos_pump.setStyleSheet(nuevo_estilo)
+
+    def nut_pump(self, val):
+        estilo_temp = """QFrame{
+        background-color:{color};
+        }"""
+        rojo = "rgb(255, 0, 0);"
+        verde = "rgb(0, 255, 0);"
+        if val == True:
+            nuevo_estilo = estilo_temp.replace('{color}', verde)
+            self.act_nut_pump.setStyleSheet(nuevo_estilo)
+        else:
+            nuevo_estilo = estilo_temp.replace('{color}', rojo)
+            self.act_nut_pump.setStyleSheet(nuevo_estilo)
+
+    def heater(self, val):
+        estilo_temp = """QFrame{
+        background-color:{color};
+        }"""
+        rojo = "rgb(255, 0, 0);"
+        verde = "rgb(0, 255, 0);"
+        if val == True:
+            nuevo_estilo = estilo_temp.replace('{color}', verde)
+            self.act_heater.setStyleSheet(nuevo_estilo)
+        else:
+            nuevo_estilo = estilo_temp.replace('{color}', rojo)
+            self.act_heater.setStyleSheet(nuevo_estilo)
+
+    def water_pump(self, val):
+        estilo_temp = """QFrame{
+        background-color:{color};
+        }"""
+        rojo = "rgb(255, 0, 0);"
+        verde = "rgb(0, 255, 0);"
+        if val == True:
+            nuevo_estilo = estilo_temp.replace('{color}', verde)
+            self.act_water_pump.setStyleSheet(nuevo_estilo)
+        else:
+            nuevo_estilo = estilo_temp.replace('{color}', rojo)
+            self.act_water_pump.setStyleSheet(nuevo_estilo)
+
+    def mix_pump(self, val):
+        estilo_temp = """QFrame{
+        background-color:{color};
+        }"""
+        rojo = "rgb(255, 0, 0);"
+        verde = "rgb(0, 255, 0);"
+        if val == True:
+            nuevo_estilo = estilo_temp.replace('{color}', verde)
+            self.act_mix_pump.setStyleSheet(nuevo_estilo)
+        else:
+            nuevo_estilo = estilo_temp.replace('{color}', rojo)
+            self.act_mix_pump.setStyleSheet(nuevo_estilo)
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
